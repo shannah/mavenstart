@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/mavenstart.iml" filepath="$PROJECT_DIR$/.idea/mavenstart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/mavenstart-common.iml" filepath="$PROJECT_DIR$/common/mavenstart-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase/mavenstart-javase.iml" filepath="$PROJECT_DIR$/javase/mavenstart-javase.iml" />
+    </modules>
+  </component>
+</project>

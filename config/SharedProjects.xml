@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<mavenStart>
+    <projectTypes>
+        <projectType id="cn1-app"
+                     label="Codename One Application"
+                     archetypeArtifactId="cn1app-archetype"
+                     archetypeGroupId="com.codenameone"
+                     archetypeVersion="LATEST"/>
+
+
+    </projectTypes>
+</mavenStart>

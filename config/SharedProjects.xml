@@ -5,7 +5,24 @@
                      label="Codename One Application"
                      archetypeArtifactId="cn1app-archetype"
                      archetypeGroupId="com.codenameone"
-                     archetypeVersion="LATEST"/>
+                     archetypeVersion="LATEST">
+            <property name="mainName" label="Main Class Name" type="textfield"/>
+            <property name="packageName" label="Package Name" type="textfield"/>
+            <command>
+                <arg value="com.codenameone:codenameone-maven-plugin:7.0.62:generate-app-project"/>
+                <arg value="-DarchetypeGroupId=com.codenameone"/>
+                <arg value="-DarchetypeArtifactId=cn1app-archetype"/>
+                <arg value="-DarchetypeVersion=7.0.62"/>
+                <arg value="-DartifactId={{ artifactId }}"/>
+                <arg value="-DgroupId={{ groupId }}" />
+                <arg value="-Dversion={{ version }}" />
+                <arg value="-DmainName={{ mainName }}" />
+                <arg value="-DpackageName={{ packageName }}"/>
+                <arg value="-Dcn1Version=LATEST"/>
+                <arg value="-Dcn1PluginVersion=7.0.62"/>
+                <arg value="-U"/>
+            </command>
+        </projectType>
 
 
     </projectTypes>

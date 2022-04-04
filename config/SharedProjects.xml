@@ -30,6 +30,8 @@
                      archetypeVersion="LATEST">
             <property name="mainName" label="Main Class Name" type="textfield"/>
             <property name="packageName" label="Package Name" type="textfield"/>
+            <property name="artifactId" label="Artifact ID" type="hidden" value="{{ mainName | toLowerCase }}"/>
+            <property name="groupId" label="Group ID" type="hidden" value="{{ packageName | toLowerCase }}"/>
             <command>
                 <arg value="archetype:generate"/>
                 <arg value="-DarchetypeGroupId={{ archetypeGroupId }}"/>

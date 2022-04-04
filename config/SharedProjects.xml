@@ -50,8 +50,7 @@
                      archetypeArtifactId="javafx-archetype-fxml"
                      archetypeGroupId="org.openjfx"
                      archetypeVersion="LATEST">
-            <property name="mainName" label="Main Class Name" type="textfield"/>
-            <property name="packageName" label="Package Name" type="textfield"/>
+
             <command>
                 <arg value="archetype:generate"/>
                 <arg value="-DarchetypeGroupId={{ archetypeGroupId }}"/>

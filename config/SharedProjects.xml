@@ -31,19 +31,20 @@
             <property name="mainName" label="Main Class Name" type="textfield"/>
             <property name="packageName" label="Package Name" type="textfield"/>
             <command>
-                <arg value="com.codenameone:codenameone-maven-plugin:7.0.62:generate-app-project"/>
-                <arg value="-DarchetypeGroupId=com.codenameone"/>
-                <arg value="-DarchetypeArtifactId=cn1app-archetype"/>
-                <arg value="-DarchetypeVersion=7.0.62"/>
+                <arg value="archetype:generate"/>
+                <arg value="-DarchetypeGroupId={{ archetypeGroupId }}"/>
+                <arg value="-DarchetypeArtifactId={{ archetypeArtifactId }}"/>
+                <arg value="-DarchetypeVersion={{ archetypeVersion }}"/>
                 <arg value="-DartifactId={{ artifactId }}"/>
                 <arg value="-DgroupId={{ groupId }}" />
                 <arg value="-Dversion={{ version }}" />
-                <arg value="-DmainName={{ mainName }}" />
                 <arg value="-DpackageName={{ packageName }}"/>
+                 <arg value="-DmainName={{ mainName }}" />
                 <arg value="-Dcn1Version=LATEST"/>
                 <arg value="-Dcn1PluginVersion=7.0.62"/>
                 <arg value="-U"/>
             </command>
+            
         </projectType>
          <projectType id="javafx-fxml"
                      label="JavaFX Application (FXML)"
